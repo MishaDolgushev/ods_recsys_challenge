@@ -1,0 +1,7 @@
+_target_: rectools.model_selection.TimeRangeSplitter
+
+test_size: "7D"
+n_splits: 3
+filter_cold_users: True
+filter_cold_items: True
+filter_already_seen: True

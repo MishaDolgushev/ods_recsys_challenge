@@ -1,0 +1,14 @@
+TOP_K: 10
+
+metrics:
+  precision:
+    _target_: rectools.metrics.classification.Precision
+
+  recall:
+    _target_: rectools.metrics.classification.Recall
+
+  map:
+    _target_: rectools.metrics.ranking.MAP
+
+  ndcg:
+    _target_: rectools.metrics.ranking.NDCG
