@@ -1,5 +1,5 @@
 defaults:
-  - model: sasrec
+  - model: hstu
   - splitter: time_splitter
   - metrics: metrics
   - override hydra/hydra_logging: disabled
@@ -25,11 +25,13 @@ item_features:
   - release_year_cat
 
 TOP_N: 10
+model_name: hstu
 
 logging:
   project_name: ods_recsys_competition
-  task_name: fit_sasrec
+  task_name: fit_hstu
   tags: [
-    "sasrec",
-    "hot"
+    "hstu",
+    "hot",
+    "sampled_softmax50"
   ]

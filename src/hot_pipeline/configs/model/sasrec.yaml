@@ -3,9 +3,9 @@ n_heads: 4
 n_factors: 256
 dropout_rate: 0.2
 session_max_len: 256
-loss: "softmax"
-gbce_t: 0.2
+loss: sampled_softmax
+n_negatives: 128
 lr: 0.001
 batch_size: 128
-epochs: 3
+epochs: 10
 deterministic: True

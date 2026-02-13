@@ -1,0 +1,14 @@
+_target_: rectools.models.HSTUModel
+n_heads: 4
+n_blocks: 2
+n_factors: 128
+dropout_rate: 0.2
+session_max_len: 256
+loss: sampled_softmax
+n_negatives: 128
+lr: 0.001
+batch_size: 128
+epochs: 1
+deterministic: True
+relative_time_attention: True
+relative_pos_attention: True

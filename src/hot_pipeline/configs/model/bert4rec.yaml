@@ -1,0 +1,11 @@
+_target_: rectools.models.BERT4RecModel
+deterministic: True
+mask_prob: 0.15
+n_heads: 4
+n_factors: 256
+dropout_rate: 0.2
+session_max_len: 256
+loss: "softmax"
+lr: 0.001
+batch_size: 128
+epochs: 5
